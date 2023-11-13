@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Signup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    form {
+      width: 60%;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="password"],
+    input[type="email"],
+    input[type="date"],
+    input[type="radio"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button[type="submit"] {
+      background-color: #4CAF50;
+    }
+
+    button[type="reset"] {
+      background-color: #f44336;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Customer Signup Page</h1>
+  <form action="customerSignup">
+    Customer Name: <input type="text" name="customer" placeholder="Enter customer name"><br><br>
+    Mobile: <input type="tel" name="mobile" placeholder="Enter your mobile number"><br><br>
+    Password: <input type="password" name="pass" placeholder="Enter your password"><br><br>
+    Email: <input type="email" name="email" placeholder="Enter your Email ID"><br><br>
+    Gender: 
+    <input type="radio" name="gender" value="male" required>Male
+    <input type="radio" name="gender" value="female" required>Female<br><br>
+    Date of Birth: <input type="date" name="dob" required><br><br>
+    <button type="submit">Signup</button>
+    <button type="reset">Cancel</button>
+  </form>
+</body>
+</html>
